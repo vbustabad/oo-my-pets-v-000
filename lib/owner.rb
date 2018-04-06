@@ -62,7 +62,7 @@ class Owner
 
   def sell_pets
     self.pets.each do |animal_type, pet|
-      self.pets.reject! {|animal_type| animal_type.include?(pet) }
+      self.pets.reject! {|animal_type| pet }
     end
   end
 
