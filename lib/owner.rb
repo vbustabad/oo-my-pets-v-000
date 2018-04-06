@@ -61,11 +61,12 @@ class Owner
   end
 
   def sell_pets
-    new_dog_instance = Dog.new(name) 
-    
     self.pets.each do |animal_type, pet|
-      self.pets.reject! {|animal_type| pet }
+      animal_type.each do |pet|
+        pet.mood = "nervous"
+      end
     end
+    animal_type.delete_values!
   end
 
   def list_pets
