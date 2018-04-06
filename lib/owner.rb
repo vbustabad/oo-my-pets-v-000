@@ -61,6 +61,8 @@ class Owner
   end
 
   def sell_pets
+    new_dog_instance = Dog.new(name) 
+    
     self.pets.each do |animal_type, pet|
       self.pets.reject! {|animal_type| pet }
     end
