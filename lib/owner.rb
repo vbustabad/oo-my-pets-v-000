@@ -42,12 +42,15 @@ class Owner
   end
 
   def walk_dogs
+    self.mood = "happy"
   end
 
   def play_with_cats
+    self.mood = "happy"
   end
 
   def feed_fish
+    self.mood = "happy"
   end
 
   def sell_pets
